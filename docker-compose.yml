@@ -9,6 +9,10 @@ services:
       - internal
     ports:
       - "97:80"
+    links:
+      - php-fpm
+    volumes:
+      - db-data:/var/www/html
 
   php-fpm:
     container_name: app
@@ -16,9 +20,13 @@ services:
     build:
       dockerfile: Docker/php/Dockerfile
     volumes:
-      - ../app:/var/www:delegated
+      - db-data:/var/www/html
     networks:
       - internal
+
+volumes:
+  db-data:
+    name: "my-app-data"
 
 networks:
   internal:
