@@ -1,0 +1,25 @@
+version: "3.7"
+services:
+  nginx:
+    container_name: nginx
+    build:
+      context: .
+      dockerfile: Docker/nginx/Dockerfile
+    networks:
+      - internal
+    ports:
+      - "97:80"
+
+  php-fpm:
+    container_name: app
+    tty: true
+    build:
+      dockerfile: Docker/php/Dockerfile
+    volumes:
+      - ../app:/var/www:delegated
+    networks:
+      - internal
+
+networks:
+  internal:
+    driver: bridge
