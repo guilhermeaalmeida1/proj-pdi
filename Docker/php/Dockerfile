@@ -17,6 +17,9 @@ RUN wget https://github.com/infection/infection/releases/download/0.27.0/infecti
     && chmod +x infection.phar \
     && mv infection.phar /usr/local/bin/infection
 
+RUN wget https://cs.symfony.com/download/php-cs-fixer-v3.phar -O php-cs-fixer \
+    && chmod a+x php-cs-fixer \
+    && mv php-cs-fixer /usr/local/bin/php-cs-fixer
 
 COPY /Docker/php/xdebug.ini /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 COPY /Docker/php/php.ini /usr/local/etc/php.ini
