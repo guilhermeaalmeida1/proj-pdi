@@ -1,1 +1,1 @@
-{"version":1,"defects":{"Tests\\Test::testTestFoo":5},"times":{"Tests\\Test::testTestFoo":0.004}}
+{"version":1,"defects":{"Tests\\Test::testTestFoo":5,"Tests\\Test::testFooClassExist":5},"times":{"Tests\\Test::testTestFoo":0.002,"Tests\\Test::testFooClassExist":0}}
