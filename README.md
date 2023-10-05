@@ -8,3 +8,11 @@ No primeiro momento vamos precisar criar uma estrutura inicial para setup da apl
 - PHPCS-Fixer
 - PHP Infection
 - PSR-4
+
+## Criando projeto
+
+- Criar as instancias: 
+>docker compose up -d --build
+
+- Acessar bash 
+> docker exec -it app bash
