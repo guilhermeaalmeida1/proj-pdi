@@ -15,6 +15,11 @@
     "phpunit/phpunit": "^10.1"
   },
   "scripts": {
-    "test": "phpunit"
+    "test": "phpunit",
+    "csfixer": "bash csfixer.sh",
+    "phpinfection": "bash infection.json5"
+  },
+  "scripts-descriptions": {
+    "test": "Run all test with PHPUnit in Tests Folder"
   }
 }
