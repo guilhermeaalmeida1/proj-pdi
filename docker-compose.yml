@@ -20,7 +20,7 @@ services:
     build:
       dockerfile: Docker/php/Dockerfile
     volumes:
-      - db-data:/var/www/html
+      - .:/var/www
     networks:
       - internal
 
