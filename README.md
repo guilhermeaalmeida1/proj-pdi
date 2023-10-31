@@ -23,7 +23,7 @@ Alguns comandos podem ser executados usando o composer
 Rodar os testes existentes
 > composer test
 
-Usar o csfixer
+Usar o csfixer. Por padrão, o diretorio `src` sera verificado.
 > composer csfixer
 
 Usar o PHP Infection 

@@ -3,7 +3,8 @@
 
   "autoload": {
     "psr-4": {
-      "src\\": "src/"
+      "src\\": "src/",
+      "config\\": "config/"
     }
   },
   "autoload-dev": {
@@ -16,10 +17,11 @@
   },
   "scripts": {
     "test": "phpunit",
-    "csfixer": "bash csfixer.sh",
+    "csfixer": "bash config/cs-fixer/csfixer.sh",
     "phpinfection": "bash infection.json5"
   },
   "scripts-descriptions": {
-    "test": "Run all test with PHPUnit in Tests Folder"
+    "test": "Run all test with PHPUnit in Tests Folder",
+    "csfixer": "With the path of the file, use csfixer for correction of the file"
   }
 }
